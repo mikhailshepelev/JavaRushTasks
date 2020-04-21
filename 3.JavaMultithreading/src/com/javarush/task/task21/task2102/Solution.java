@@ -9,6 +9,7 @@ import java.lang.reflect.Modifier;
 public class Solution {
     public static void main(String[] args) {
         int classModifiers = Solution.class.getModifiers();
+
         System.out.println(isModifierSet(classModifiers, Modifier.PUBLIC));   //true
         System.out.println(isModifierSet(classModifiers, Modifier.STATIC));   //false
 
@@ -17,6 +18,12 @@ public class Solution {
     }
 
     public static boolean isModifierSet(int allModifiers, int specificModifier) {
+        String [] mods = Modifier.toString(allModifiers).split("\\s");
+        for (String s : mods) {
+            if (s.equals(Modifier.toString(specificModifier))) {
+                return true;
+            }
+        }
         return false;
     }
 
