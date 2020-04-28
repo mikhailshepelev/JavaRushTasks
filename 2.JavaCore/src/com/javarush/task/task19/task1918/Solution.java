@@ -4,20 +4,22 @@ package com.javarush.task.task19.task1918;
 Знакомство с тегами
 */
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.parser.Parser;
+import org.jsoup.select.Elements;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = reader.readLine();
         reader.close();
-
-        String t = args[0];
 
         FileReader fileReader = new FileReader(fileName);
         StringBuilder builder = new StringBuilder();
@@ -28,11 +30,11 @@ public class Solution {
         fileReader.close();
         String result = builder.toString();
 
-        Pattern p = Pattern.compile(("<"+t+".*>.*?</"+t+">"));
-        Matcher m = p.matcher(result);
-        while (m.find()) {
-            System.out.println(m.start() + " " + m.group());
-        }
+        Document dc = Jsoup.parse(result," ", Parser.xmlParser());
+        Elements elem = dc.select(args[0]);
 
+        for (Element elements: elem){
+            System.out.println(elements);
+        }
     }
 }
