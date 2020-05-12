@@ -186,4 +186,9 @@ Collections встроенные класс применение - 0822
 
 #25й уровень
 2501-2503 - задачи на Enum
+2504 - Enum состояние нити
+2505 - UncaughtExceptionHandler и Daemon, String format
+2506 - логирование State внутри другой нити
+2508 - задача на прерывание Thread, Task Manipulator
+2510-2512 - задачи на UncaughtExceptionHandler
 
