@@ -191,4 +191,5 @@ Collections встроенные класс применение - 0822
 2506 - логирование State внутри другой нити
 2508 - задача на прерывание Thread, Task Manipulator
 2510-2512 - задачи на UncaughtExceptionHandler
+2512-2513 - задачи на yield
 
