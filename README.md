@@ -192,4 +192,13 @@ Collections встроенные класс применение - 0822
 2508 - задача на прерывание Thread, Task Manipulator
 2510-2512 - задачи на UncaughtExceptionHandler
 2512-2513 - задачи на yield
+2909 - задачи на рефакторинг
 
+##26й уровень
+2601-2603 - задачи на comparator
+2604-2606 - задачи на volatile
+2607-2609 - задачи на synchronized блоки
+2610 - concurrent BlockingQueue
+2611 - concurrent Map
+2612 - concurrent Lock
+3008 - большая задача на чат (использование сокета, сериализации)
