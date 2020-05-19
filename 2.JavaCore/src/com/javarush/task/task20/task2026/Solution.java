@@ -25,6 +25,26 @@ public class Solution {
     }
 
     public static int getRectangleCount(byte[][] a) {
-        return 0;
+        int counter = 0;
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length; j++) {
+                if (a[i][j] == 1) {
+                    counter++;
+                    for (int k = j; k < a.length; k++) {
+                        if (a[i][k] == 1) {
+                            a[i][k] = 0;
+                            try {
+                                for (int l = i + 1; l < a.length; l++) {
+                                    if (a[l][k] == 1) a[l][k] = 0;
+                                    else break;
+                                }
+                            } catch (IndexOutOfBoundsException ignored){}
+                            }
+                        else break;
+                    }
+                }
+            }
+        }
+        return counter;
     }
 }
