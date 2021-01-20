@@ -1,8 +1,9 @@
 package com.javarush.task.task26.task2601;
 
-/* 
+/*
 Почитать в инете про медиану выборки
 */
+
 public class Solution {
 
     public static void main(String[] args) {
