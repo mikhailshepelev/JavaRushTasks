@@ -1,8 +1,8 @@
 ### 3 Level
-Keyboard input tasks   
+Tasks about input from keyboard 
 
 ### 4 Level
-Tasks for conditional statements and loops   
+Tasks about conditional statements and loops   
 
 ### 5 Level
 0502 and 0505 - Method of implementing a fight between two cats (fight(Cat anotherCat))   
@@ -13,21 +13,21 @@ Tasks about initialization (constructor analog), getters / setters, constructors
 Finalize and Garbage Collector  
 0612 - Casting of primitive types   
 Tasks about statics  
-0621 - Family ties of cats (about objects within objects)   
+0621 - Family relations of cats (about objects within another objects)   
 
 ### 7 Level
 Arrays and ArrayLists  
-0724 - Family ties, objects within objects   
+0724 - Family relations, objects within another objects   
 
 ### 8 Level
 Tasks about sets and maps, a difference between LinkedList and ArrayList  
 0822 - Usage of built-in Collections class   
-0823 - An algorithm that capitalizes the first letters of words in a string   
-0824 - Family ties (objects withib objects + ArrayList)   
-0826 - Sorting and reversing the order of numbers in an array via Collections   
-0809 and 0810 - calculating the time difference  
+0823 - An algorithm that capitalizes a first letters of words in a string   
+0824 - Family relations (objects within another objects + ArrayList usage)   
+0826 - Sorting and reversing an order of numbers in an array via Collections   
+0809 and 0810 - Calculating a time difference  
 0816 - Date parsing and removal from the map by date  
-0827 - Counting the number of days since the beginning of the year (even / odd) from the parameter - string  
+0827 - Counting a number of days since the beginning of the year (even / odd) from a parameter - string  
 0830 - Arrays.sort and compareTo  
 0818 - Iterator implementation  
 
@@ -54,7 +54,7 @@ Inheritance, incapsulation, access modifiers
 1204-1205, 1224-1225 instanceOf  
 Tasks about Overriding and Overloading  
 Tasks about abstract methods, classes and interfaces  
-1233 - Method for finding the minimum element in an array and its index  
+1233 - Method for finding a minimum element in an array and its index  
 
 ### 13 Level
 Tasks about abstract methods, classes and interfaces  
@@ -73,29 +73,29 @@ Tasks about polymorphism, upcasting/downcasting of objects
 1420 - Finding the greatest common divisor  
 1421 - Singleton pattern example  
 
-###15й уровень
-Задачи на наследование, интерфейсы, перегрузку методов
-1517 - задача про исключение в статическом блоке
-1522 - реализация синглтон
-1524 - порядок загрузки переменных в память
-1527 - задача на считывание URL и изъятие из неё списка параметров
-1530 - template pattern
-1531 - нахождение факториала через BigInteger
+### 15 Level
+Tasks about inheritance, interfaces, method overloading  
+1517 - Exception in a static block  
+1522 - Singleton pattern example  
+1524 - An order of loading variables into memory  
+1527 - Reading an URL and removing the parameter list from it  
+1530 - Template pattern example  
+1531 - Factorial calculation via BigInteger  
 
-###16й уровень
-Задачи про многопоточность (interrupt, join)
-Интересная задача с reader.ready - 1628
-Чтение данных с файла + потоки - 1630
-Реализация фабричного паттерна - 1631
-Задача про ExceptionHandler - 1633
+### 16 Level
+Tasks about multithreading (interrupt, join)  
+1628 - Reader.ready implementation  
+1630 - Reading data from file + threads  
+1631 - Factory pattern example  
+1633 - ExceptionHandler implementation  
 
-###17й уровень
-Синглтон паттерн - 1706 и 1707
-Задачи про synchronised, volatile
-Чтение данных из файла - 1721
-Задача про аргументы командной строки и CRUD операции, парс строки в дату - 1710
-Аргументы командной строки, множественные CRUD и многопоточность, парс строки в дату - 1711
-Задача на ConcurrentQueue - 1712
+### 17 Level
+1706 и 1707 - Singleton pattern example  
+Tasks about syncronized, volatile  
+1721 - Reading data from file  
+1710 - Command line arguments and CRUD operations, parsing a string into a date  
+1711 - Command line arguments, CRUD and multithreading, parsing string to date  
+1712 - Task about ConcurrentQueue  
 
 ###18й уровень
 Задачи на потоки ввода/вывода
