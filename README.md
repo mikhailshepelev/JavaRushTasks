@@ -97,111 +97,114 @@ Tasks about syncronized, volatile
 1711 - Command line arguments, CRUD and multithreading, parsing string to date  
 1712 - Task about ConcurrentQueue  
 
-###18й уровень
-Задачи на потоки ввода/вывода
-Задача на нахождения байта с максимальным количеством повторов с использованием мапы - 1803
-Задача на сортировку по байткоду через Collections - 1805
-Задача на побайтовую запись в разные файлы - 1808
-Задачи на Wrapper pattern - 1811-1815
-Задача на аргументы командной строки + округление дробного числа до заданного количества знаков (String.formatOf) - 1817
-Задача на считывание double из файла, округление через Math.round и запись как строку в другой файл - 1820
-Задача на считывание из файла, сортировка по байтам в мапе и вывод на экран количества встреченных байтов 
-(использование SortedMap) - 1821
-Нахождение часто встречающегося байта с созданием стримов в разных потоках и добавлением в мапу - 1823
-Закрытие потоков неявно через try() {} - 1824
-Создание файла через файл класс, запись в него. Использование мапы. - 1825
-Шифрование и дешифрование при записи и чтении с файла - 1826
-1827 - считывание и запись в файл из аргументов ком строки. Использование StringBuilder
+### 18 Level
+Tasks about input/output streams  
+1803 - Finding a byte with the maximum number of repetitions using a map  
+1805 - Sorting by bytecode via Collections  
+1808 - Bitwise writing to a different files  
+1811-1815 - Wrapper pattern example  
+1817 - Command line arguments + rounding a decimal number to a specified precision (String.formatOf)  
+1820 - Reading a double value from a file, rounding through Math.round and writing as a string to another file  
+1821 - Reading from a file, sorting by bytes in the map and displaying to console a number of bytes encountered
+(using SortedMap)  
+1823 - Finding a frequently occurring byte via creating streams in different threads and adding to the map  
+1824 - Closing streams via try-catch with resources  
+1825 - Creating a file through a file class, writing to it using a map  
+1826 - Encryption and decryption when writing and reading from a file  
+1827 - Reading and writing to a file from command line arguments using StringBuilder  
 
-###19й уровень
-Задачи на адаптер паттерн - 1901-1905
-Использование StringBuilder - 1903
-Использование split метода с лимитом
-Задачи на FileReader/Writer - 1906-1910
-1910 - проверка char на regex
-1911-1915 - задачи на подмену System.out ридером-обёрткой
-1914 - String.format применение
-1919 - апдейт Value в мапе
-1917 - создания адаптера FileConsoleWriter (пишет и в файл и в консоль)
-1921 - сплит строки с использованием регулярок, парсинг строки в дату по паттернам
-1923 - использование регулярок
-1924 - извлечение вэлью по ключу мапы
-1926 - StringBuilder reverse method
-1928 - задача на ClassLoader
-1918 - задача на изъятие тэгов из HTML файла через библиотеку JSOUP
+### 19 Level
+1901-1905 - Adapter pattern implementation example  
+1903 - StringBuilder implementation  
+Using the split method with a limit  
+1906-1910 - Tasks about FileReader/Writer  
+1910 - checking char for regex  
+1911-1915 - Replacing System.out by reader-wrapper  
+1914 - String.format implementation  
+1919 - Value update in Map  
+1917 - Creating a FileConsoleWriter adapter (writes to both file and a console)  
+1921 - String split using regex, parsing strings into dates by using patterns  
+1923 - Regex usage  
+1924 - Extracting map value by key  
+1926 - StringBuilder reverse method  
+1928 - ClassLoader example  
+1918 - Removing tags from an HTML file using the JSOUP library  
 
-###20й уровень
-2001-2005 - задачи на сохранение массива объектов в файл и считывание из файла, создание временного файла
-2002 - задача с переводом строки в Enum, Date и наоборот
-2003 - задача на Properties
-2006-2013 - задачи на Serializable, Externalizable
-2008 - десериализация синглтона через метод readResolve
-2014-2015 - задачи на сериализацию и transient поля, 2015 - многопоточность впридачу
-2018 - задача на сериализацию наследуемых классов и переопредение (read write) методов
-2020 - transient поля
-2023 - задача на цепочку вызовов методов из суперклассов
-2025 - алгоритм на вычисление чисел армстронга
-2026 - алгоритм на вычисление прямоугольников из единиц в рамках квадратного двумерного массива
+### 20 Level
+Tasks about serialization/deserialization  
+2001-2005 - Saving an array of objects to a file and reading from a file, creating a temporary file  
+2002 - Conversion string to Enum, Date and vice versa  
+2003 - Properties example  
+2006-2013 - Tasks about Serializable, Externalizable  
+2008 - Singleton deserialization via readResolve method  
+2014-2015 - Tasks about serialization and transient fields, 2015 - with multithreading  
+2018 - Derived classes serialization and overriding (read write) methods  
+2020 - transient fields  
+2023 - Chain of method calls from superclasses  
+2025 - Armstrong numbers calculation  
+2026 - Calculating "1" rectangles from within a square-shaped two-dimensional array  
 
-###21й уровень
-2101 - задача с определением адреса сети, перевод суженного до байт числа в инт,
-побитовые операции
-2102 - задача на getModifiers
-2104-2106 - equals and hashcode
-2107-2109 - задачи на clone
-2110-2112 - try with resources
-2112 - пример как использовать внутри блока try объект созданный в скобках try
-2113 - игра ипподром
+### 21 Level
+2101 - Determining the network address, conversion of a number casted to byte into int, bitwise operations  
+2102 - getModifiers example  
+2104-2106 - equals and hashcode  
+2107-2109 - Task about clone method  
+2110-2112 - Try with resources  
+2112 - Example how to use an object created in try brackets inside a try block  
+2113 - Hyppodrome game  
 
-##22й уровень
-2201 - задача с нитями, которые обрезают строки по табуляциям, UncaughtExceptionHandler, String.format
-2202, 2203 - regex + substring
-2204-2206 - String.format, 2206 - формат даты
-2207-2209 - StringBuider
-2207 - тяжелая задача на StringBuilder reverse и добавление слов из списка для которых есть перевертыши
-2209 - наркоманская задача на прилепление слов при совпадении первой буквы с последней предыдущего и наоборот
-2210 - String Tokenizer
-2211 - считывание данных из файла, перевод в другую кодировку и запись в другой файл
-2212 - жёсткая регулярка на поиск правильного номера телефона
-2312 - говняная консольная змейка
+### 22 Level
+2201 - Threads that truncate strings by tabs, UncaughtExceptionHandler, String.format  
+2202, 2203 - regex + substring  
+2204-2206 - String.format, 2206 - Date format  
+2207-2209 - StringBuider  
+2207 - StringBuilder reverse, adding words from the list for which there are inversions  
+2209 - Sticking words when first letter matches a last previous one and vice versa  
+2210 - String Tokenizer  
+2211 - reading data from a file, converting to another encoding and writing to another file  
+2212 - Regex for finding correct phone number  
+2312 - Snake game console  
 
-##23й уровень
-Задачи на final
-2304 - задача на Mock с использованием анонимных классов
-2305-2311 - задачи на вложенные, внутренние, анонимные классы
-2413 - консольная игра Arkanoid
+### 23 Level
+Tasks about final  
+2304 - Mock with anonymous classes usage  
+2305-2311 - Tasks about nested, inner, anonymous classes  
+2413 - Arkanoid console game  
 
-##24й уровень
-2401-2403 - интерфейсы маркеры
-2404-2405, 2407-2409 - классы внутри методов, анонимные классы
-2409 - getSimpleName класса
-2406 - наследование вложенных классов 
-2410 - реализация Итератора анонимным классом
-2412 - задача с использованием Comparator, ChoiceFormat, MessageFormat
-3608 - задача на паттерн MVC
+### 24 Level
+2401-2403 - Marker-interfaces  
+2404-2405, 2407-2409 - Classes within methods, anonymous classes   
+2409 - getSimpleName of a class  
+2406 - Nested classes inheritance  
+2410 - Iterator pattern implementation by anonymous class  
+2412 - Comparator, ChoiceFormat, MessageFormat  
+3608 - MVC pattern big task  
 
-#25й уровень
-2501-2503 - задачи на Enum
-2504 - Enum состояние нити
-2505 - UncaughtExceptionHandler и Daemon, String format
-2506 - логирование State внутри другой нити
-2508 - задача на прерывание Thread, Task Manipulator
-2510-2512 - задачи на UncaughtExceptionHandler
-2512-2513 - задачи на yield
-2909 - задачи на рефакторинг
+### 25 Level
+2501-2503 - Tasks about Enum  
+2504 - Enum thread state  
+2505 - UncaughtExceptionHandler and Daemon, String format  
+2506 - State logging inside other thread  
+2508 - interrupting Thread, Task Manipulator  
+2510-2512 - UncaughtExceptionHandler  
+2512-2513 - yield  
+2909 - Refactoring big task  
 
-##26й уровень
-2601-2603 - задачи на comparator
-2604-2606 - задачи на volatile
-2607-2609 - задачи на synchronized блоки
-2610 - concurrent BlockingQueue
-2611 - concurrent Map
-2612 - concurrent Lock
-3008 - большая задача на чат (использование сокета, сериализации, синхронизированные блоки и wait/notify внутри них)
+### 26 Level
+2601-2603 - Comparator  
+2604-2606 - Volatile  
+2607-2609 - Synchronized blocks  
+2610 - Concurrent BlockingQueue  
+2611 - Concurrent Map  
+2612 - Concurrent Lock  
+3008 - Chat creating big task (Socket, Serialization, Syncronized blocks and wait/notify inside them)  
 
-##27й уровень
-2701, 2702 - break, continue, метки
-2703-2708 - deadlock
-2707 - задача на определения порядка синхронизаций в блоке путем намеренной организацией дедлока
-2790-2710 - wait notify
-2711 - countdownlatch
+### 27 Level
+2701, 2702 - break, continue, goto  
+2703-2708 - deadlock  
+2707 - Determining an order of synchronizations in a block by intentionally organizing a deadlock  
+2790-2710 - wait notify  
+2711 - countdownlatch  
+
+### 28 Level
+
