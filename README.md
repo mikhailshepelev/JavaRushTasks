@@ -207,4 +207,15 @@ Tasks about final
 2711 - countdownlatch  
 
 ### 28 Level
-
+2801 - Enums + Switch  
+2802 - ThreadFactory simulation, ThreadGroup  
+2803 - ThreadLocalRandom  
+2805 - Setting thread priorities  
+2806 - Executors, ExecutorService  
+2807 - ThreadPoolExecutor  
+2808 - Callable  
+2809 - Phaser  
+2811 - ReentrantReadWriteLock, ReadLock, WriteLock  
+2812 - List of not executed tasks with ExecutorService usage  
+2813 - Callable, Future  
+3209 - HTML parser (Swing, HTML)  
