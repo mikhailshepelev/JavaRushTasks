@@ -1,82 +1,77 @@
-###Алгоритмы:
-Сумма цифр числа - task 0132
-Ближайшее к 10 - task 0409
-Базовые задачи по циклам и условиям - Java Syntax 4th level
+### 3 Level
+Keyboard input tasks   
 
-###3й уровень
-Задачи на ввод с клавиатуры
+### 4 Level
+Tasks for conditional statements and loops   
 
-###4й уровень
-Задачи на условные операторы и циклы
+### 5 Level
+0502 and 0505 - Method of implementing a fight between two cats (fight(Cat anotherCat))   
+Tasks about initialization (constructor analog), getters / setters, constructors  
+0521 - Calling a constructor from a constructor   
 
-###5й уровень
-Метод реализации драки двух котов (fight (Cat anotherCat)) - task 0502 и 0505
-Есть задачи про инициализацию (аналог конструктора), геттеры/сеттеры, конструкторы
-Интересная задача про вызов конструктора из конструктора - task 0521
+### 6 Level
+Finalize and Garbage Collector  
+0612 - Casting of primitive types   
+Tasks about statics  
+0621 - Family ties of cats (about objects within objects)   
 
-###6й уровень
-Задачи про finalize и сборщика мусора
-Задача про приведение примитивных типов - 0612
-Есть задачи про статики
-Интересная задача про родственные связи кошек (про объекты внутри объектов) - 0621
+### 7 Level
+Arrays and ArrayLists  
+0724 - Family ties, objects within objects   
 
-###7й уровень
-Базовые задачи про массивы и ArrayList
-Интересная задача про родственные связи, объекты внутри объектов - 0724
+### 8 Level
+Tasks about sets and maps, a difference between LinkedList and ArrayList  
+0822 - Usage of built-in Collections class   
+0823 - An algorithm that capitalizes the first letters of words in a string   
+0824 - Family ties (objects withib objects + ArrayList)   
+0826 - Sorting and reversing the order of numbers in an array via Collections   
+0809 and 0810 - calculating the time difference  
+0816 - Date parsing and removal from the map by date  
+0827 - Counting the number of days since the beginning of the year (even / odd) from the parameter - string  
+0830 - Arrays.sort and compareTo  
+0818 - Iterator implementation  
 
-###8й уровень
-Задачи про сеты и мапы, разница между LinkedList и ArrayList
-Collections встроенные класс применение - 0822
-Задача с алгоритмом, который делает первые буквы слов в строке заглавными - 0823
-Задача с родственными связями (объект в объекте + ArrayList) - 0824
-Задача с сортировкой и обращением порядка чисел в массиве через Collections - 0826
-0809 и 0810 - высчитывание разницы во времени
-0816 - парсинг даты и удаление из мапы по дате
-0827 - подсчёт количества дней с начала года (чётное/нечетное) из параметра - строки
-Задача с Arrays.sort и compareTo - 0830
-0818 - задача на итератор
+### 9 Level
+Tasks about StackTrace, Exceptions  
+0922 - String to Date conversion by SimpleDateForman pattern  
+0927 - Map to Set conversion  
+0928 - Reading data from a file and writing to another  
+0929 - Reading data from a file and writing to another  
+0930 - After entering as input numbers and strings mixed - sorting numbers in ascending order, rows in descending order.
+Collections methods usage  
 
-###9й уровень
-Задачи на StackTrace, Exceptions
-Задача на перевод строки в дату по паттерну SimpleDateFormat - 0922
-0927 - задача на перевод мапы в сет
-0928 - чтение данных из файла и запись в другой
-0929 - чтение данных из файла и запись в другой
-0930 - жёсткий алгоритм. Введение чисел и строк вперемешку и сортировка чисел в возрастающем, строк в убывающем.
-использование Collections методов
+### 10 Level
+Type Casting  
+1012 - Entering 10 lines as input and counting letters of the alphabet in them using a map  
+1016 - Entering 10 lines as input and counting the number of identical words using a map  
+1020 - Array Sort implementation  
 
-###10й уровень
-Задачи на преобразование типов
-Задача на ввод 10 строк и подсчёт букв алфавита в них с использованием мапы - 1012
-Задача на ввод 10 строк с подсчёт количества одинаково встречающихся слов с использованием мапы - 1016
-Задача на сортировку массива - 1020
+### 11 Level
+Inheritance, incapsulation, access modifiers  
+1123 - Return min and max values in an array  
 
-##11й уровень
-Задачи на наследование, инкапсуляцию (модификаторы доступа)
-1123 - задача на возврат минимального и макс значения в массиве
+### 12 Level
+1204-1205, 1224-1225 instanceOf  
+Tasks about Overriding and Overloading  
+Tasks about abstract methods, classes and interfaces  
+1233 - Method for finding the minimum element in an array and its index  
 
-###12й уровень
-1204-1205, 1224-1225 задачи на instanceof
-Есть задачи на перегрузку и переопределение методов
-Задачи на абстрактные методы/классы и интерфейсы
-1233 - задача на написание метода для нахождения минимального элем в массиве и его индекса
+### 13 Level
+Tasks about abstract methods, classes and interfaces  
+1307, 1322 - Generics  
+1318 - Reading data from a file and writing to the console  
+1319 - Writing data to a file  
+1326 - Reading numbers from a file, printing sorted even numbers to the console  
+1327 - "Repka" tale implementation  
+1328 - "Robots fight" implementation  
 
-###13й уровень
-Задачи на интерфейсы и абстрактные классы/методы
-1307, 1322 - задачи на дженерик
-1318 - считывание данных из файла и запись в консоль
-1319 - запись данных в файл
-1326 - считывание из файла чисел, выведение в консоль чётных отсортированных
-1327 - наркомания про репку
-1328 - наркоманская реализация боёв роботов
-
-###14й уровень
-Задачи на полиморфизм, расширение/сужение объектов
-1401-1402, 1407, 1411, 1412, 1415 - instanceof
-1408 - фабричный паттерн
-1419 - заполнение списка Exceptions
-1420 - нахождение наибольшего общего делителя
-1421 - реализация синглтон паттерна
+### 14 Level
+Tasks about polymorphism, upcasting/downcasting of objects  
+1401-1402, 1407, 1411, 1412, 1415 - instanceOf  
+1408 - Factory pattern example  
+1419 - Filling out an Exceptions list  
+1420 - Finding the greatest common divisor  
+1421 - Singleton pattern example  
 
 ###15й уровень
 Задачи на наследование, интерфейсы, перегрузку методов
