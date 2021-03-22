@@ -219,3 +219,8 @@ Tasks about final
 2812 - List of not executed tasks with ExecutorService usage  
 2813 - Callable, Future  
 3209 - HTML parser (Swing, HTML)  
+
+### 29 Level
+2901-2903 - Naming conventions  
+2904, 2906, 2907 - Wrappers autoboxing principles  
+2912 - Chain of responsibility pattern example  
