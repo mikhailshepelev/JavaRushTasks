@@ -3,6 +3,7 @@ package com.javarush.task.task27.task2712;
 import com.javarush.task.task27.task2712.ad.AdvertisementManager;
 import com.javarush.task.task27.task2712.ad.NoVideoAvailableException;
 import com.javarush.task.task27.task2712.kitchen.Order;
+import com.javarush.task.task27.task2712.kitchen.TestOrder;
 
 import java.io.IOException;
 import java.util.Observable;
@@ -36,6 +37,23 @@ public class Tablet extends Observable {
         }
 
         return null;
+    }
+
+    public void createTestOrder() {
+        TestOrder order = null;
+        try {
+            order = new TestOrder(this);
+            AdvertisementManager advertisementManager = new AdvertisementManager(order.getTotalCookingTime() * 60);
+            advertisementManager.processVideos();
+            if (!order.isEmpty()) {
+                setChanged();
+                notifyObservers(order);
+            }
+        } catch (IOException ex) {
+            logger.severe("Console is unavailable.");
+        } catch (NoVideoAvailableException ex1) {
+            logger.info("No video is available for the order " + order);
+        }
     }
 
     @Override

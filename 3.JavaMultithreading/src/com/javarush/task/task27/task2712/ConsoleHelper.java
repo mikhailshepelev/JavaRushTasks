@@ -26,7 +26,7 @@ public class ConsoleHelper {
 
         while (true) {
             System.out.println("Доступные блюда: " + Dish.allDishesToString());
-            System.out.print("Укажите, какое блюдо хотите заказать: ");
+            System.out.print("Введите блюдо: ");
             String input = reader.readLine();
 
             if (input.equals("exit")) {

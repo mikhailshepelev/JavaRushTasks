@@ -1,6 +1,9 @@
 package com.javarush.task.task27.task2712.ad;
 
 import com.javarush.task.task27.task2712.ConsoleHelper;
+import com.javarush.task.task27.task2712.statistic.StatisticManager;
+import com.javarush.task.task27.task2712.statistic.event.NoAvailableVideoEventDataRow;
+import com.javarush.task.task27.task2712.statistic.event.VideoSelectedEventDataRow;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,10 +40,16 @@ public class AdvertisementManager {
         });
 
         if (videos.isEmpty()) {
+            StatisticManager.getInstance().register(new NoAvailableVideoEventDataRow(timeSeconds));
             throw new NoVideoAvailableException();
         }
 
         int totalTimeSpentToAds = 0;
+
+
+        List<Advertisement> listForStatistics = new ArrayList<>();
+        long totalSum = 0;
+
         for (Advertisement video : videos) {
             if (totalTimeSpentToAds + video.getDuration() > timeSeconds) {
                 continue;
@@ -49,7 +58,11 @@ public class AdvertisementManager {
             ConsoleHelper.writeMessage(video.getName() + " is displaying... "
                     + video.getAmountPerOneDisplaying() + ", " + oneSecondPrice);
             video.revalidate();
+            listForStatistics.add(video);
+            totalSum += video.getAmountPerOneDisplaying();
             totalTimeSpentToAds += video.getDuration();
         }
+
+        StatisticManager.getInstance().register(new VideoSelectedEventDataRow(listForStatistics, totalSum, totalTimeSpentToAds));
     }
 }
