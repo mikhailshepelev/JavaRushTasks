@@ -6,16 +6,21 @@ import com.javarush.task.task27.task2712.kitchen.Order;
 import com.javarush.task.task27.task2712.kitchen.TestOrder;
 
 import java.io.IOException;
-import java.util.Observable;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.logging.Logger;
 
-public class Tablet extends Observable {
+public class Tablet {
 
     private final int number;
     public static Logger logger = Logger.getLogger(Tablet.class.getName());
+    private LinkedBlockingQueue<Order> queue;
 
     public Tablet(int number) {
         this.number = number;
+    }
+
+    public void setQueue(LinkedBlockingQueue<Order> queue) {
+        this.queue = queue;
     }
 
     public Order createOrder() {
@@ -25,9 +30,7 @@ public class Tablet extends Observable {
             AdvertisementManager advertisementManager = new AdvertisementManager(order.getTotalCookingTime() * 60);
             advertisementManager.processVideos();
             if (!order.isEmpty()) {
-                setChanged();
-                notifyObservers(order);
-
+                queue.add(order);
                 return order;
             }
         } catch (IOException ex) {
@@ -46,8 +49,7 @@ public class Tablet extends Observable {
             AdvertisementManager advertisementManager = new AdvertisementManager(order.getTotalCookingTime() * 60);
             advertisementManager.processVideos();
             if (!order.isEmpty()) {
-                setChanged();
-                notifyObservers(order);
+                queue.add(order);
             }
         } catch (IOException ex) {
             logger.severe("Console is unavailable.");
