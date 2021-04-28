@@ -224,3 +224,6 @@ Tasks about final
 2901-2903 - Naming conventions  
 2904, 2906, 2907 - Wrappers autoboxing principles  
 2912 - Chain of responsibility pattern example  
+
+### 30 Level  
+3001-3003, 3009, 3010 - Radixes (number systems), BigInteger and Integer methods with radixes  
