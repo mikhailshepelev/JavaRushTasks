@@ -227,3 +227,5 @@ Tasks about final
 
 ### 30 Level  
 3001-3003, 3009, 3010 - Radixes (number systems), BigInteger and Integer methods with radixes  
+3004 - RecursiveTask, ForkJoin  
+3006 - 3007, 3013 - bitwise operators  
