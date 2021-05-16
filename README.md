@@ -226,6 +226,8 @@ Tasks about final
 2912 - Chain of responsibility pattern example  
 
 ### 30 Level  
-3001-3003, 3009, 3010 - Radixes (number systems), BigInteger and Integer methods with radixes  
+3001-3002, 3009, 3010 - Radixes (number systems), BigInteger and Integer methods with radixes  
+3003 - TransferQueue example with multithreading (consumer/producer)  
 3004 - RecursiveTask, ForkJoin  
 3006 - 3007, 3013 - bitwise operators  
+3012 - ternary balanced number system conversion into decimal system and vice versa  
