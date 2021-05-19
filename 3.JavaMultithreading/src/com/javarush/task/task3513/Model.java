@@ -1,18 +1,22 @@
 package com.javarush.task.task3513;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Model {
     private static final int FIELD_WIDTH = 4;
     private Tile[][] gameTiles;
     protected int maxTile;
     protected int score;
+    private Stack<Tile[][]> previousStates = new Stack<>();
+    private Stack<Integer> previousScores = new Stack<>();
+    private boolean isSaveNeeded = true;
 
     public Model() {
         resetGameTiles();
+    }
+
+    public Tile[][] getGameTiles() {
+        return gameTiles;
     }
 
     private void addTile() {
@@ -85,7 +89,31 @@ public class Model {
         return arrayIsChanged;
     }
 
+    public boolean canMove() {
+        if (!getEmptyTiles().isEmpty()) {
+            return true;
+        }
+
+        for (int i = 0; i < gameTiles.length; i++) {
+            for (int j = 1; j < gameTiles.length; j++) {
+                if (gameTiles[i][j].value == gameTiles[i][j-1].value)
+                    return true;
+            }
+        }
+        for (int i = 0; i < gameTiles.length; i++) {
+            for (int j = 1; j < gameTiles.length; j++) {
+                if (gameTiles[j][i].value == gameTiles[j-1][i].value)return true;
+            }
+        }
+
+        return false;
+    }
+
     void left() {
+
+        if (isSaveNeeded) {
+            saveState(gameTiles);
+        }
 
         boolean needToAdd = false;
 
@@ -98,6 +126,8 @@ public class Model {
         if (needToAdd) {
             addTile();
         }
+
+        isSaveNeeded = true;
     }
 
     private void rotateToRight() {
@@ -114,6 +144,7 @@ public class Model {
     }
 
     void right() {
+        saveState(gameTiles);
         rotateToRight();
         rotateToRight();
         left();
@@ -121,6 +152,7 @@ public class Model {
         rotateToRight();
     }
     void up() {
+        saveState(gameTiles);
         rotateToRight();
         rotateToRight();
         rotateToRight();
@@ -128,10 +160,87 @@ public class Model {
         rotateToRight();
     }
     void down() {
+        saveState(gameTiles);
         rotateToRight();
         left();
         rotateToRight();
         rotateToRight();
         rotateToRight();
+    }
+
+    private void saveState(Tile[][] gameTiles) {
+        Tile[][] fieldCopy = new Tile[gameTiles.length][gameTiles.length];
+
+        for (int i = 0; i < gameTiles.length; i++) {
+            for (int j = 0; j < gameTiles.length; j++) {
+                fieldCopy[i][j] = new Tile(gameTiles[i][j].value);
+            }
+        }
+        
+        previousStates.push(fieldCopy);
+        previousScores.push(score);
+
+        isSaveNeeded = false;
+    }
+
+    public void rollback() {
+        if (!previousScores.isEmpty() && !previousStates.isEmpty()) {
+            gameTiles = previousStates.pop();
+            score = previousScores.pop();
+        }
+    }
+
+    public void randomMove() {
+        int n = ((int) (Math.random() * 100)) % 4;
+
+        switch (n) {
+            case 0 :
+                left();
+                break;
+            case 1 :
+                right();
+                break;
+            case 2 :
+                up();
+                break;
+            case 3 :
+                down();
+                break;
+        }
+    }
+
+    public boolean hasBoardChanged() {
+        Tile[][] previousState = previousStates.peek();
+
+        for (int i = 0; i < gameTiles.length; i++) {
+            for (int j = 0; j < gameTiles.length; j++) {
+                if (previousState[i][j].value != gameTiles[i][j].value) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    public MoveEfficiency getMoveEfficiency(Move move) {
+        move.move();
+
+        if (!hasBoardChanged()) {
+            return new MoveEfficiency(-1, 0, move);
+        }
+
+        rollback();
+        return new MoveEfficiency(getEmptyTiles().size(), score, move);
+    }
+
+    public void autoMove() {
+        PriorityQueue<MoveEfficiency> queue = new PriorityQueue<>(4, Collections.reverseOrder());
+        queue.add(getMoveEfficiency(this::left));
+        queue.add(getMoveEfficiency(this::right));
+        queue.add(getMoveEfficiency(this::up));
+        queue.add(getMoveEfficiency(this::down));
+
+        Objects.requireNonNull(queue.poll()).getMove().move();
     }
 }

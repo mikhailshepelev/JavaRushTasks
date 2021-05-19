@@ -231,3 +231,4 @@ Tasks about final
 3004 - RecursiveTask, ForkJoin  
 3006 - 3007, 3013 - bitwise operators  
 3012 - ternary balanced number system conversion into decimal system and vice versa  
+3513 - 2048 game (two-dimensional array rotations)  
