@@ -235,3 +235,7 @@ Tasks about final
 
 ### 30 Level  
 3101 - Reading and writing to files  
+3111 - SimpleFileVisitor example  
+3102-3104, 3113 - Operations with file trees, SimpleFileVisitor  
+3106 - SequenceInputStream + ZipInputStream  
+3112 - writing data from URL to file  
