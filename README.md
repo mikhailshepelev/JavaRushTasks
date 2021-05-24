@@ -239,3 +239,9 @@ Tasks about final
 3102-3104, 3113 - Operations with file trees, SimpleFileVisitor  
 3106 - SequenceInputStream + ZipInputStream  
 3112 - writing data from URL to file  
+3105 - reading/writing from/to ZipInputStream, ZipInputStream  
+3107 - Null Object pattern example  
+3109 - Properties class, converting files data to Properties objects  
+3108 - relativize method demo (Path)  
+
+
