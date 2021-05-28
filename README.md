@@ -245,4 +245,10 @@ Tasks about final
 3108 - relativize method demo (Path)  
 2028 - custom tree implementation(big task)  
 
+### 32 Level
+3201, 3210 - RandomAccessFile examples  
+3202, 3203, 3213 - StringWriter/StringReader  
+3211 - MessageDigest/MD5 hash with ByteArrayInputStream example  
+3205, 3206 - Dynamic proxy/reflection example (3206 - +generics)  
+
 
