@@ -233,7 +233,7 @@ Tasks about final
 3012 - ternary balanced number system conversion into decimal system and vice versa  
 3513 - 2048 game (two-dimensional array rotations)  
 
-### 30 Level  
+### 31 Level  
 3101 - Reading and writing to files  
 3111 - SimpleFileVisitor example  
 3102-3104, 3113 - Operations with file trees, SimpleFileVisitor  
@@ -243,5 +243,6 @@ Tasks about final
 3107 - Null Object pattern example  
 3109 - Properties class, converting files data to Properties objects  
 3108 - relativize method demo (Path)  
+2028 - custom tree implementation(big task)  
 
 
