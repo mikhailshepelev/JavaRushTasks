@@ -165,13 +165,13 @@ Tasks about serialization/deserialization
 2212 - Regex for finding correct phone number  
 2312 - Snake game console  
 
-### 23 Level
+### 23 Level  
 Tasks about final  
 2304 - Mock with anonymous classes usage  
 2305-2311 - Tasks about nested, inner, anonymous classes  
 2413 - Arkanoid console game  
 
-### 24 Level
+### 24 Level  
 2401-2403 - Marker-interfaces  
 2404-2405, 2407-2409 - Classes within methods, anonymous classes   
 2409 - getSimpleName of a class  
@@ -190,7 +190,7 @@ Tasks about final
 2512-2513 - yield  
 2909 - Refactoring big task  
 
-### 26 Level
+### 26 Level  
 2601-2603 - Comparator  
 2604-2606 - Volatile  
 2607-2609 - Synchronized blocks  
@@ -206,7 +206,7 @@ Tasks about final
 2790-2710 - wait notify  
 2711 - countdownlatch  
 
-### 28 Level
+### 28 Level  
 2801 - Enums + Switch  
 2802 - ThreadFactory simulation, ThreadGroup  
 2803 - ThreadLocalRandom  
@@ -220,7 +220,7 @@ Tasks about final
 2813 - Callable, Future  
 3209 - HTML parser (Swing, HTML)  
 
-### 29 Level
+### 29 Level  
 2901-2903 - Naming conventions  
 2904, 2906, 2907 - Wrappers autoboxing principles  
 2912 - Chain of responsibility pattern example  
@@ -245,10 +245,12 @@ Tasks about final
 3108 - relativize method demo (Path)  
 2028 - custom tree implementation(big task)  
 
-### 32 Level
+### 32 Level  
 3201, 3210 - RandomAccessFile examples  
 3202, 3203, 3213 - StringWriter/StringReader  
 3211 - MessageDigest/MD5 hash with ByteArrayInputStream example  
 3205, 3206 - Dynamic proxy/reflection example (3206 - +generics)  
+3207, 3208 - RMI (remote method invocation example)  
+3212 - Service Locator pattern example  
 
 
