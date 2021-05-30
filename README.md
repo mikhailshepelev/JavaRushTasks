@@ -252,5 +252,8 @@ Tasks about final
 3205, 3206 - Dynamic proxy/reflection example (3206 - +generics)  
 3207, 3208 - RMI (remote method invocation example)  
 3212 - Service Locator pattern example  
+2213 - Tetris big quest (two-dimensional array + Swing)  
+
+
 
 
