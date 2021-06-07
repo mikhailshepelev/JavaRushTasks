@@ -254,6 +254,10 @@ Tasks about final
 3212 - Service Locator pattern example  
 2213 - Tetris big quest (two-dimensional array + Swing)  
 
+### 33 Level  
+3301-3305, 3311, 3312 - Jackson library usage example, serialization and deserialization of JSON format  
+
+
 
 
 
