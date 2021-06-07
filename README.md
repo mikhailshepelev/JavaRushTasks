@@ -256,6 +256,7 @@ Tasks about final
 
 ### 33 Level  
 3301-3305, 3311, 3312 - Jackson library usage example, serialization and deserialization of JSON format  
+3306-3309 - XML serialization/deserialization examples  
 
 
 
