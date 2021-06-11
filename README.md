@@ -261,7 +261,11 @@ Tasks about final
 
 ### 34 level  
 3401-3404, 3411 - Recursion tasks (3411 - tower of Hanoi problem)  
-3405-3406, 3413 - Garbage collector, WeakReference, SoftReference  
+3405-3407, 3413 - Garbage collector, WeakReference, SoftReference, PhantomReference  
+3408 - Generics and reflection API  
+3409, 3412 - Logger, slf4j, log4j  
+
+
 
 
 
