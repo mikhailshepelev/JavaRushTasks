@@ -259,11 +259,14 @@ Tasks about final
 3306-3309 - XML serialization/deserialization examples  
 2515 - Space big task  
 
-### 34 level  
+### 34 Level  
 3401-3404, 3411 - Recursion tasks (3411 - tower of Hanoi problem)  
 3405-3407, 3413 - Garbage collector, WeakReference, SoftReference, PhantomReference  
 3408 - Generics and reflection API  
 3409, 3412 - Logger, slf4j, log4j  
+
+### 35 Level  
+3501-3504, 3509 - Generics, parametrized types  
 
 
 
