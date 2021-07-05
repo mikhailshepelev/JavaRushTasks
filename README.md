@@ -266,7 +266,7 @@ Tasks about final
 3409, 3412 - Logger, slf4j, log4j  
 
 ### 35 Level  
-3501-3504, 3509 - Generics, parametrized types  
+3501-3506, 3509-3510, 3512 - Generics, parametrized types  
 
 
 
