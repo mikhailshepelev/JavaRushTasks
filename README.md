@@ -267,7 +267,7 @@ Tasks about final
 
 ### 35 Level  
 All tasks about Generics, parametrized types, wildcards  
-
+Big task - Factory method and Abstract factory patterns example  
 
 
 
