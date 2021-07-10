@@ -264,6 +264,7 @@ Tasks about final
 3405-3407, 3413 - Garbage collector, WeakReference, SoftReference, PhantomReference  
 3408 - Generics and reflection API  
 3409, 3412 - Logger, slf4j, log4j  
+3707 - HashSet manual implementation  
 
 ### 35 Level  
 All tasks about Generics, parametrized types, wildcards  
