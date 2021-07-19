@@ -270,6 +270,10 @@ Tasks about final
 All tasks about Generics, parametrized types, wildcards  
 Big task - Factory method and Abstract factory patterns example  
 
+### 36 Level  
+3601, 3609 - MVC pattern implementation example  
+3602 - Reflection API task (getting methods, constructors etc on a fly)  
+
 
 
 
