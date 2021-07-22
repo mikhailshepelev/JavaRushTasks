@@ -273,7 +273,9 @@ Big task - Factory method and Abstract factory patterns example
 ### 36 Level  
 3601, 3609 - MVC pattern implementation example  
 3602 - Reflection API task (getting methods, constructors etc on a fly)  
-
+3604 - Binary Tree/ Red/Black Tree implementation  
+3605 - FileReader, TreeSet usage  
+3611 - Binary Tree usage  
 
 
 
