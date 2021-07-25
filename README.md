@@ -276,6 +276,8 @@ Big task - Factory method and Abstract factory patterns example
 3604 - Binary Tree/ Red/Black Tree implementation  
 3605 - FileReader, TreeSet usage  
 3611 - Binary Tree usage  
+3612 - A representation of problem: HashSet cannot find element by hash if it is mutable and has been changed  
+
 
 
 
