@@ -278,6 +278,15 @@ Big task - Factory method and Abstract factory patterns example
 3611 - Binary Tree usage  
 3612 - A representation of problem: HashSet cannot find element by hash if it is mutable and has been changed  
 
+### 37 Level  
+3701 - Iterator custom implementation  
+3708, 3709 - Proxy pattern implementation example  
+3710 - Decorator pattern implementation example  
+3711 - Facade pattern implementation example  
+3712 - Template method pattern implementation example  
+3713 - Chain of responsibility pattern implementation example  
+
+
 
 
 
