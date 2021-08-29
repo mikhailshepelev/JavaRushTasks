@@ -291,6 +291,9 @@ Big task - Factory method and Abstract factory patterns example
 3804 - Exception factory  
 3807-3812 - Annotations in java, examples of creation and using  
 
+### 39 Level  
+3902-3903 - working with bits, BitSet API  
+
 
 
 
