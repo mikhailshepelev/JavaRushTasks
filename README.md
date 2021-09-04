@@ -294,6 +294,14 @@ Big task - Factory method and Abstract factory patterns example
 ### 39 Level  
 3902-3903 - working with bits, BitSet API  
 
+### 40 Level  
+4001-4002, 4010-4011 - working with HTTP in Java  
+4003 - communication via email in Java (embedded java EE library)  
+4005-4006 - working with Sockets  
+4007-4009, 4012 - Dates in Java, DateTime, Calendar  
+
+
+
 
 
 
